@@ -16,7 +16,7 @@ To use any of the examples just:
 2. Move the example you want into where you keep your projects (optional: and delete the rest)
 3. (Suggested) Ensure Intellij is installed and has the Scala plugin installed, then click "File > open" and find the build file - double clicking on the build file should mean intellij magically downloads the dependencies and sets everything up.
 
-TODO Step by step tutorial with screen shots.
+TODO Step by step tutorial with screen shots and for multiple IDEs.
 
 # Structure
 
@@ -27,6 +27,11 @@ Each example/template/boiler-plate should be contained in a top level directory 
 The project should have:
 
  - The correct directory structure in place, e.g. src/main/scala/com/yourcompany-changeme, src/test/scala/com/yourcompany-changeme project/, target/.  Placeholder files may be necessary if no example code exists.
- - A .gitignore to ensure IDE and compiled won't get added
+ - A .gitignore to ensure IDE files and compiled code won't get added
  - The build file itself, together with any plugin files and other configs
- - *IMPORTANT*: A README.md that breifly describes (A) what libraries the project has
+ - *IMPORTANT*: A README.md that breifly describes (A) what libraries the project has, what extras it has (code coverage, release process etc) and (B) what the command line is to build it and run tests
+
+## Desired but not required
+
+Example code that uses the libraries to prove it does actually build in a non-trivial way.
+
