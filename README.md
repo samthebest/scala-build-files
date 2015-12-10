@@ -8,6 +8,10 @@ To remove the rather epic barrier to entry Scala has regarding the complexity of
 
 We wish for everyone and anyone to take the build file for their company, remove the code, IP and company name, and commit it to this project.  Imagine how awesomely easy it would be for people to get into Scala if just one person from each company did this!
 
+## Why a single repo? What's wrong with github?
+
+It would be nice to see everything in one place, have a README.md for each, easier Googlability and have all project specific code removed.  Furthermore having everything in a single project could mean in a single clone one can grep through all the templates, (or use some other search tool easily).
+
 # Use
 
 To use any of the examples just:
