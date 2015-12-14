@@ -22,7 +22,7 @@ To use any of the examples just:
 
 TODO Step by step tutorial with screen shots and for multiple IDEs.
 
-# Structure
+# Template Structure
 
 Each example/template/boiler-plate should be contained in a top level directory that loosely describes what libraries or plugins it uses, e.g. "sbt-spark-scalaz-shapeless", or "mvn-macros-spray", or "mvn-spray-akka-with-release-process", or "sbt-parboiled-with-fat-jar", or "gradle-breeze-with-sbt-pack".
 
@@ -39,3 +39,7 @@ The project should have:
 
 Example code that uses the libraries to prove it does actually build in a non-trivial way.
 
+# TOP WANTED TEMPLATES
+
+ - Template projects using visualisation tools, with simple examples of plotting (2D TSV, 3D TSV).
+ - Template projects with a script that starts iScala/iSpark/Zeppelin that *uses the build file* to determine dependencies.
