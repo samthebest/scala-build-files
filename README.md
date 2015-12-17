@@ -1,3 +1,8 @@
+# PROJECT IN PAUSE MODE
+
+It seems typesafe have this thing which makes this project unnecessary https://www.typesafe.com/community/core-tools/activator-and-sbt.
+
+
 # scala-build-files
 
 A collection of templates / boiler plates build / project files / structures for quickly getting a Scala project up and running with various libraries. It is build tool agnostic, any example may exist.
