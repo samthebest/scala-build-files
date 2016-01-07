@@ -3,6 +3,21 @@
 
 `sbt assembly`
 
+## To install/run the notebook
+
+Install (only works on debian linux, not done one for mac yet)
+
+```
+./install-scala-jupyter.sh
+```
+
+Run
+
+```
+ipython3 notebook
+```
+
+
 ## To import libs into Scala notebook
 
 ```
