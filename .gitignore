@@ -5,3 +5,5 @@
 */*Untitled*.ipynb
 */jupyter-scala_2*
 */.ipynb_checkpoints
+*/*.idea
+*/*/*.idea

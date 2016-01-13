@@ -7,7 +7,7 @@ set -e
 sudo apt-get -y install ipython
 sudo apt-get -y install python-pip
 
-sudo apt-get update && sudo apt-get install python3-dev python3-pip build-essential libzmq3-dev
+sudo apt-get update && sudo apt-get install -y python3-dev python3-pip build-essential libzmq3-dev
 sudo pip3 install virtualenv
 sudo pip3 install pyzmq
 
