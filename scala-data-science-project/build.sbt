@@ -20,7 +20,6 @@ libraryDependencies ++= Seq(
   "com.chuusai" %% "shapeless" % "2.2.5",
   "com.quantifind" %% "wisp" % "0.0.4",
   "io.continuum.bokeh" %% "bokeh" % "0.6",
-  "org.jzy3d" % "jzy3d-api" % "0.9.2-SNAPSHOT",
   compilerPlugin("org.scalamacros" % "paradise" % "2.0.1" cross CrossVersion.full),
   ("org.apache.spark" % "spark-sql_2.10" % "1.5.0-cdh5.5.0") withSources() withJavadoc(),
   ("org.apache.spark" % "spark-core_2.10" % "1.5.0-cdh5.5.0") withSources() withJavadoc(),

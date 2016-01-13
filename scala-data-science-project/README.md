@@ -6,7 +6,7 @@ TODO
 2. Try using Scala to generate javascript
 3. Get dockerfile to work so one need not screw up python or depend on install-scala-jupyter - DONE
 4. Get publish to work because load.jar doesn't seem to work
-
+5. update readme
 
 ## To build
 
