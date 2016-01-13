@@ -1,20 +1,18 @@
 #!/bin/bash
 
-set -e
-
 docker images | grep scala-notebook >/dev/null
 
 exists=$?
 
 if [ "$exists" = "1" ]; then
+	
 	echo "######################################################################"
 	echo ""
 	echo "Building the docker image as it does not exist, this will only happen once"
 	echo ""
 	echo "#######################################################################"
-	cd docker
-	./build.sh
-	cd ..
+	docker build -t scala-notebook docker
+
 fi
 
 notebooks=`pwd`/notebooks
