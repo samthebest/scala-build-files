@@ -27,7 +27,7 @@ ADD install-scala-jupyter.sh /root/install-scala-jupyter.sh
 
 RUN /root/install-scala-jupyter.sh
 
-EXPOSE 8888
+EXPOSE 8888 58610
 
 ADD .jupyter /root/.jupyter
 

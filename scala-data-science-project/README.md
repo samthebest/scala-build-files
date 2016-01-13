@@ -79,20 +79,6 @@ line((1 to 10), (1 to 10))
 line(List(1, 2, 3, 4, 5), List(1, 2, 4, 8, 15))
 ```
 
-## To plot 3D
-
-Unfortunately the only 3d plotting library I could find for Scala/Java is jzy3d which has a horrible old java uber verbose OOP style API and is rather unstable. An example is in `com.fred.ThreeDPlotExample`, and can be invoked as follows
-
-load.ivy("org.jzy3d" % "jzy3d-api" % "0.9.2-SNAPSHOT")
-
-
-```
-load.jar("/home/sam/src/scala-build-files/scala-data-science-project/target/scala-2.10/fred-assembly-0.1.0.jar")
-import com.fred.ThreeDPlotExample
-
-ThreeDPlotExample()
-```
-
 ## Project Overview
 
 It has
@@ -117,8 +103,14 @@ and
 
 # TODO
 
+Consider just using iScala, since plotting is a pain (it doesn't show underneath)
+
+
 1. update readme (use example python file instead of tick tick tick)
 2. Try using Scala to generate javascript
+
+3. Ditch WISP too, it's not actively developed and is just rather weird
+
 3. Get dockerfile to work so one need not screw up python or depend on install-scala-jupyter - DONE
 4. Get publish to work because load.jar doesn't seem to work
 5. update readme
