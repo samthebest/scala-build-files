@@ -1,30 +1,37 @@
+## Intro
 
+This project provides a super-duper easy to use template Scala project **with jupyter notebook with Scala kernals**.  It uses docker to run the notebook so is a **single command** to install and run the notebook.  It includes examples of plotting, using libraries and using in progress code from the template Scala project.
 
-TODO
-
-1. Remove jzy3d it sucks
-2. Try using Scala to generate javascript
-3. Get dockerfile to work so one need not screw up python or depend on install-scala-jupyter - DONE
-4. Get publish to work because load.jar doesn't seem to work
-5. update readme
-
-## To build
+## To build the scala code
 
 `sbt assembly`
 
 ## To install/run the notebook
 
-Install (only works on debian linux, not done one for mac yet)
+Ensure you have docker installed, recommend this documentation: https://github.com/docker/tutorials/tree/master/docs. 
 
-```
-./install-scala-jupyter.sh
-```
+To run the notebook `./start-notebook.sh`, it will spit out the URL.  If the docker container for the notebook does not yet exist, it will build it.
 
-Run
+The docker uses your .ivy2 cache to find libraries, and also uses the `notebooks` directory to persist notebooks.  If you want to use a different directory to persist notebooks provide it as the first arguement to `start.sh-notebook.sh`.
 
-```
-ipython3 notebook
-```
+## To stop the notebook
+
+`./finish-notebook.sh`. Do NOT use kill -9, it puts the container into a very weird state.
+
+## Examples
+
+Start the notebook then open examples.ipynb
+
+The examples include:
+
+ - importing and using libs
+ - importing and using your in progress Scala code under the Scala project
+ - 2d plot
+ - 3d plot
+
+Some examples require commands to be run, please read the comments.
+
+
 
 
 ## To import libs into Scala notebook
@@ -108,6 +115,12 @@ and
  - some sbt plugins
  - changed merge strat to use first
 
-# WARNING
+# TODO
 
-jupyter is a bit weird, if you ever move your source tree it breaks the notebook, you have to edit the JSON config files in ~/.ipython/kernals
+1. update readme (use example python file instead of tick tick tick)
+2. Try using Scala to generate javascript
+3. Get dockerfile to work so one need not screw up python or depend on install-scala-jupyter - DONE
+4. Get publish to work because load.jar doesn't seem to work
+5. update readme
+
+7. Determine if the OS has brew or apt-get, and automatically install docker.
