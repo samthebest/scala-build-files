@@ -26,24 +26,22 @@ Example `.ipynb` showing the functionality for each notebook will already exist 
 
 The jupyter notebook appears to have a number of issues, particularly in the display of images and such. Therefore the examples provided do not have any plotting.
 
-
-
-
-
-
-
 ## To run your code from your intellij project
 
-First run
+First run 
 
 ```
-sbt package
+sbt publish-local
 ```
 
-Then in the notebook (for example based on my path)
+Then in the notebook (for example based on `organization` and `name in build.sbt)
 
 ```
-load.jar("/home/sam/src/scala-build-files/scala-data-science-project/target/scala-2.10/fred_2.10-0.1.0.jar")
+// iScala:
+%libraryDependencies += "com.fred" % "fred_2.10" % "0.1.0"
+
+// jupyter:
+load.ivy("com.fred" % "fred_2.10" % "0.1.0")
 ```
 
 then in a new cell
@@ -52,7 +50,6 @@ then in a new cell
 import com.fred.CustomFunction
 
 CustomFunction(5)
-
 ```
 
 ## Project Overview
@@ -79,15 +76,9 @@ and
 
 # TODO
 
-Consider just using iScala, since plotting is a pain (it doesn't show underneath)
+1. Try using Scala to generate javascript and 3D plots
 
-1. Get publish to work because load.jar doesn't seem to work
-
-2. update readme
-
-3. Try using Scala to generate javascript
-
-4. Determine if the OS has brew or apt-get, and automatically install docker.
+2. Determine if the OS has brew or apt-get, and automatically install docker.
 
 Resources
 
