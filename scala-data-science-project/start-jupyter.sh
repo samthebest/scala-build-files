@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker images | grep scala-notebook >/dev/null
+docker images | grep scala-jupyter >/dev/null
 
 exists=$?
 
@@ -21,7 +21,7 @@ if [ "$1" != "" ]; then
 	notebooks=$1
 fi
 
-docker run -v ~/.ivy2:/root/.ivy2 -v $notebooks:/root/notebooks scala-notebook &
+docker run -v ~/.ivy2:/root/.ivy2 -v $notebooks:/root/notebooks scala-jupyter &
 
 sleep 5
 

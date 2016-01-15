@@ -116,3 +116,7 @@ Consider just using iScala, since plotting is a pain (it doesn't show underneath
 5. update readme
 
 7. Determine if the OS has brew or apt-get, and automatically install docker.
+
+Resources
+
+https://jakevdp.github.io/blog/2013/06/01/ipython-notebook-javascript-python-communication/
