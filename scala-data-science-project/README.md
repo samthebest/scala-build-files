@@ -80,6 +80,7 @@ and
 
 2. Determine if the OS has brew or apt-get, and automatically install docker.
 
-Resources
+Resources / stuff to look into
 
 https://jakevdp.github.io/blog/2013/06/01/ipython-notebook-javascript-python-communication/
+https://github.com/jupyter/docker-stacks/tree/master/all-spark-notebook
